@@ -8,10 +8,10 @@ int main()
     scanf("%d", &a);
     printf("B:  ");
     scanf("%d", &b);
-    a += b;
-    b -= a;
-    a += b;
-    b = -b;
+    a += b;//a becomes a + b
+    b -= a;//b becomes b - (a + b) = -b
+    a += b;//a becomes a + b + (-b) = a
+    b = -b;//b becomes -(-b) = b
     printf("A:  %d\n", a);
     printf("B:  %d\n", b);
     return 0;
